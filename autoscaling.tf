@@ -1,5 +1,5 @@
 resource "aws_appautoscaling_target" "taskoverflow" {
-  max_capacity        = 4
+  max_capacity        = 8
   min_capacity        = 1
   resource_id         = "service/taskoverflow/taskoverflow"
   scalable_dimension  = "ecs:service:DesiredCount"
